@@ -1,4 +1,4 @@
-# Universal-Openshift-Agent-2
+# Universal-Openshift-Agent
 **Start-up Guide**
 =================
 
@@ -552,8 +552,8 @@ Document References
 | [3] https://developers.redhat.com/products/codeready-containers/overview |  RED HAT webpage to retrieve an OPENSHIFT Code Ready Container (CRC) |
 | [4] https://docs.stonebranch.com/confluence/display/UA68/Universal+Agent+for+UNIX+Installation |  Universal Agent Installation |
 | [5] https://www.stonebranch.com/contact/ |  Contact address to get a 30days license key for Universal Data Mover |
-| [6] https://github.com/stonebranch-marketplace/Universal-Openshift-Agent/tree/Develop/export |  Universal Controller File Transfer task export ( xml) |
-| [7] https://github.com/stonebranch-marketplace/Universal-Openshift-Agent/tree/Develop/src |  POD deployment YAML file  |
+| [6] https://github.com/stonebranch-marketplace/Universal-Openshift-Agent/tree/develop/export |  Universal Controller File Transfer task export ( xml) |
+| [7] https://github.com/stonebranch-marketplace/Universal-Openshift-Agent/tree/develop/src |  POD deployment YAML file  |
 | [8] https://www.stonebranch.com/solutions/hybrid-cloud-file-transfers/ |  Hybrid Cloud File Transfer Solution Paper |
 
 
