@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-08-31 11:40:52" unload_format="1" unload_table="ops_script" unload_version="6.9.0.0"><ops_script action="INSERT_OR_UPDATE"><resolve_variables>true</resolve_variables><opswise_groups>d2fdc40688a847168f5a27ea2e061b67</opswise_groups><description/><sys_updated_on>2020-08-28 13:01:13</sys_updated_on><version>19</version><script_name>transfer_to_openshift</script_name><content>open dest=${ops_agent_ip} src=192.168.88.40 user=$(ops_src_cred_user) pwd=$(ops_src_cred_pwd)
+attrib dest createop=replace
+copy src=/home/nils/demo/out/index.html dest=/ss/index.html
+copy src=/home/nils/demo/out/RedHat.png dest=/ss/redhat.png
+</content><sys_id>057650a2f1f7410db3ec384c5a6610fd</sys_id><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2020-08-28 08:28:40</sys_created_on><checksum/><script_type>3</script_type><sys_created_by>ops.admin</sys_created_by><related_items_node/></ops_script></unload>
