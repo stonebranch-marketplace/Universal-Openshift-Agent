@@ -1,0 +1,43 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  name: newsflash-with-ua
+  namespace: newsflash
+spec:
+  selector:
+    app: newsflash
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: newsflash
+    spec:
+      
+      volumes:
+      - name: shared-data
+        emptyDir: {}
+      
+      containers:
+        - name: nginx-container
+          image: bitnami/nginx
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          volumeMounts:
+          - name: shared-data
+            mountPath: /opt/bitnami/nginx/html
+      # Universal Openshift Agent as sidecar container  
+        - name: universal-agent
+          image: 'stonebranch/universal-agent:7.0.0.0'
+          volumeMounts:
+          - name: shared-data
+            mountPath: '/podshare'
+          env:
+          - name: UAGTRANSIENT
+            value: yes
+          - name: UAGAGENTCLUSTERS
+            value: 'AGENT_CLUSTER_APP_NEWSFLASH'
+          - name: UAGOMSSERVERS
+            value: '7878\@192.168.88.40'
+
+
