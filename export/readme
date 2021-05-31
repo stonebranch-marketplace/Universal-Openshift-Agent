@@ -1,0 +1,4 @@
+the tar file contains the File transfer xml extract.
+extract the tar file to a directory accessible by your Universal Controller ( tar -xvf startup_guide_export.tar )
+import the extracted xml files using the Universal Controller list import feature
+adjust the imported file transfer task to your environment
